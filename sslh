@@ -1,0 +1,7 @@
+#Modo autonomo
+
+RUN=yes
+
+DAEMON=/usr/sbin/sslh
+
+DAEMON_OPTS='--user sslh -t 5 --listen 0.0.0.0:2222 --ssh 127.0.0.1:22  --openvpn 127.0.0.1:1194 --pidfile /var/run/sslh/sslh.pid'
